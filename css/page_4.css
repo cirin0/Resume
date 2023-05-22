@@ -1,0 +1,150 @@
+.container__con {
+	padding: 0px 160px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+.connection {
+	padding-top: 70px;
+	display: grid;
+	grid-template-columns: 50% 30%;
+	gap: 45px;
+	align-items: center;
+}
+.connection__left {
+}
+
+.connection__left img {
+	min-width: 686px;
+	max-height: 381px;
+}
+
+@media (max-width: 1690px) {
+	.connection__left img {
+		min-width: 430px;
+		max-height: 240px;
+	}
+}
+.connection__right {
+	background-color: #000;
+	padding: 30px;
+	transition: all 0.5s;
+	box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.5);
+}
+.connection__right:hover {
+	transition: all 0.5s;
+	box-shadow: 0px 0px 20px 6px rgba(255, 255, 255, 0.7);
+}
+.connection__right-title {
+	font-family: "Roboto Slab", serif;
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 40px;
+}
+
+.right-text__border {
+	width: 173px;
+	margin-bottom: 40px;
+}
+.connection__right-text {
+	line-height: 21px;
+	margin-bottom: 15px;
+	max-width: 307px;
+}
+.connection__right-social {
+	display: flex;
+	margin-bottom: 45px;
+}
+.right__social-inst {
+}
+.social__item {
+	margin-right: 20px;
+}
+.social__item:last-child {
+	margin-right: 0px;
+}
+.social__item img {
+	width: 30px;
+}
+.right__social-git {
+}
+.right__social-twit {
+}
+.right__social-tg {
+}
+.connection__right-button {
+	border-radius: 0;
+	margin-bottom: 33px;
+}
+.connection__right-button:hover {
+	background-color: #d9d9d9;
+	color: #000;
+	transition: all 0.5s;
+}
+@media (max-width: 1024px) {
+	.connection {
+		grid-template-columns: 60% 50%;
+	}
+}
+@media (max-width: 768px) {
+	.connection {
+		grid-template-columns: 100%;
+	}
+	.container__con {
+		padding: 0px 35px;
+	}
+	.connection__right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.connection__right-text {
+		text-align: center;
+	}
+	.connection__left {
+		display: flex;
+		justify-content: center;
+	}
+}
+@media (max-width: 425px) {
+	.container__con {
+		padding: 0px 30px;
+		margin: 0px auto;
+		box-sizing: content-box;
+	}
+	.connection {
+		grid-template-columns: 100%;
+	}
+	.connection__left img {
+		min-width: 365px;
+		max-height: 219px;
+	}
+	.connection__right-title {
+		font-size: 40px;
+		line-height: 53px;
+		margin-bottom: 30px;
+	}
+	.right-text__border {
+		width: 190px;
+		margin-bottom: 30px;
+	}
+	.connection__right-text {
+		font-size: 19px;
+		line-height: 25px;
+		margin-bottom: 30px;
+		max-width: 307px;
+	}
+	.connection__right-button {
+		padding: 21px 71px;
+		margin-bottom: 20px;
+	}
+	.connection__right {
+		background-color: #00000000;
+		padding: 30px;
+		transition: all 0.5s;
+		box-shadow: none;
+	}
+	.connection__right:hover {
+		transition: all 0.5s;
+		box-shadow: none;
+	}
+}
